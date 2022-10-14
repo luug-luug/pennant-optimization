@@ -13,4 +13,4 @@ So far the programm uses following techniques:
   * Adaptive Walk
   * Simulated Annealing (not yet working)
   * Genetic Algorithms
-    * Crossover
+    * Crossover (not yet working)
