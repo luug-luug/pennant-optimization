@@ -9,8 +9,8 @@ Hence the optimization consists in generating a chain with a set of colored penn
 ## Optimization Algorithms
 So far the programm uses following techniques:
 * Branch and Bound
-* Stochastic Optimization Algorithms
+* Stochastic Optimization Algorithms:
   * Adaptive Walk
   * Simulated Annealing (not yet working)
-  * Genetic Algorithms
+  * Genetic Algorithms:
     * Crossover (not yet working)
