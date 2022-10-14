@@ -5,3 +5,9 @@ This is a program for generating optimized chains of colored pennants. It aims a
 The challenge is to generate a chain of colored pennants which is as diverse as possible, meaning, the distribution of the colors should be spread out.
 This is measured, firstly, by the minimal distance between two same color pennants and, secondly, by the frequency of that distance.
 Hence the optimization consists in generating a chain with a set of colored pennants with the best quality possible.
+
+## Optimization Algorithms
+So far the programm is able to use the following techniques:
+* Branch and Bound
+* Random
+  * Adaptive Walk
