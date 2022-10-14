@@ -7,7 +7,10 @@ This is measured, firstly, by the minimal distance between two same color pennan
 Hence the optimization consists in generating a chain with a set of colored pennants with the best quality possible.
 
 ## Optimization Algorithms
-So far the programm is able to use the following techniques:
+So far the programm uses following techniques:
 * Branch and Bound
-* Random
+* Stochastic Optimization Algorithms
   * Adaptive Walk
+  * Simulated Annealing (not yet working)
+  * Genetic Algorithms
+    * Crossover
