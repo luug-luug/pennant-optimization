@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00d7d9bd-760b-4862-a363-9963af071c1a" name="Changes" comment="">
+    <list default="true" id="00d7d9bd-760b-4862-a363-9963af071c1a" name="Changes" comment="Use package">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Optimizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Optimizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pennant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pennant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PennantChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PennantChain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PennantPile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PennantPile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PennantOptimization/Optimizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PennantOptimization/Optimizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PennantOptimization/PennantChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PennantOptimization/PennantChain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +36,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/user/IdeaProjects/Playground",
+    "settings.editor.selected.configurable": "inlay.hints"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -52,7 +50,17 @@
       <option name="presentableId" value="Default" />
       <updated>1665753941278</updated>
       <workItem from="1665753942615" duration="2078000" />
+      <workItem from="1665839156363" duration="915000" />
+      <workItem from="1666452151637" duration="323000" />
     </task>
+    <task id="LOCAL-00001" summary="Use package">
+      <created>1665839337353</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665839337353</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,5 +76,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Use package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use package" />
   </component>
 </project>

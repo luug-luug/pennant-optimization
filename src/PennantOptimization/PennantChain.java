@@ -67,15 +67,6 @@ public class PennantChain implements Comparable<PennantChain>{
         }
         return distance;
     }
-    //FIXME -r-r-b-g-w- (8)    r-b-r-b-r-  (15)  find a meaningful way to measure the quality
-    public int measureQualityIndex() {
-        int sumInvertedDistances = 0;
-        int invertPoint = chain.length-1;
-        for (int i=0; i<amountOfPennantsOnChain; i++) {
-            sumInvertedDistances += invertPoint - chain[i].getMinDistanceToNextSameColorPennant();
-        }
-        return sumInvertedDistances;
-    }
     // - - Adjustments
     private void adjustNeighbourhoodAfterSettingPennant(int i) {
         int leftSameColorNeighbourDistance = measureMinDistanceToNextSameColorNeighbourToDirection(i, -1);
@@ -267,14 +258,12 @@ public class PennantChain implements Comparable<PennantChain>{
             indices.append(" ").append(index++);
         }
 
-        String output =
-                "## CHAIN INFOS ##\n" +
-                        "Distance:  " + minimalDistance + "\n" +
-                        "Frequency: " + frequency + "\n" +
-                        "Chain:     " + indices + "\n" +
-                        "           " + this + "\n" +
-                        "           " + distances + "\n";
-        return output;
+        return "## CHAIN INFOS ##\n" +
+                "Distance:  " + minimalDistance + "\n" +
+                "Frequency: " + frequency + "\n" +
+                "Chain:     " + indices + "\n" +
+                "           " + this + "\n" +
+                "           " + distances + "\n";
     }
     public PennantChain copy() {
         // Shallow copy of chain

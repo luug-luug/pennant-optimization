@@ -107,10 +107,6 @@ public class Optimizer {
                 recAddPennant(new PennantChain(pennantPile.getTotalAmountOfPennants(), false), pennantPile);}
             case "AdaptiveWalk" ->
                     adaptiveWalk(pennantPile, 100);
-            case "RandomWalk" ->
-                    simulatedAnnealing(pennantPile, 100, 10, 0.01);
-            case "CrossPermutation" ->
-                    crossWithPermutation(pennantPile, 100);
             default -> throw new IllegalArgumentException("No mode selected");
         }
     }
@@ -186,57 +182,5 @@ public class Optimizer {
             }
         }
         tempBestPennantChains.add(pennantChain);
-    }
-    // - - - Simulated Annealing
-    // FIXME metropolis calculation produces not-terminating-loop
-    private void simulatedAnnealing(PennantPile pennantPile, int limitForPotentialImprovementIterations, double temperature, double coolingStep) {
-        if (coolingStep <= 0) {
-            throw new IllegalArgumentException("Inadequate cooling steps");
-        }
-        if (limitForPotentialImprovementIterations <= 0) {
-            throw new IllegalArgumentException("Only positive limits for potential improvement iterations");
-        }
-
-        PennantChain pennantChain = generateRandomChain(pennantPile);
-        int count = 0;
-        int i, j;
-        double metropolis;
-        while (count < limitForPotentialImprovementIterations) {
-            // Create similar chain
-            PennantChain newPennantChain = pennantChain.copy();
-            i = (int) Math.floor(Math.random() * pennantPile.getTotalAmountOfPennants());
-            j = (int) Math.floor(Math.random() * pennantPile.getTotalAmountOfPennants());
-            newPennantChain.swapPennants(i,j);
-            // Compare chains
-            metropolis = Math.exp(-(newPennantChain.measureQualityIndex()-pennantChain.measureQualityIndex())/temperature);
-            if (
-                    newPennantChain.compareTo(pennantChain) > 0 ||
-                            Math.random() <= metropolis
-            ) {
-                pennantChain = newPennantChain;
-                count = 0;
-            } else {
-                count++;
-            }
-            temperature -= coolingStep;
-        }
-        tempBestPennantChains.add(pennantChain);
-    }
-    // - - - Cross With Permutation
-    // FIXME code crossing
-    private void crossWithPermutation(PennantPile pennantPile, int limitForPotentialImprovementIterations) {
-        int chainLength = pennantPile.getTotalAmountOfPennants();
-        if (chainLength <= 1) {
-            throw new ArrayIndexOutOfBoundsException("No walk possible");
-        }
-        PennantChain pennantChainA = generateRandomChain(pennantPile);
-        PennantChain pennantChainB = generateRandomChain(pennantPile);
-        int leftIndex;
-        int rightIndex;
-
-        for (int count=0;count<limitForPotentialImprovementIterations; count++) {
-            leftIndex = (int) Math.floor(Math.random() * chainLength);
-            rightIndex = (int) Math.floor(leftIndex + Math.random() * (chainLength-leftIndex));
-        }
     }
 }
