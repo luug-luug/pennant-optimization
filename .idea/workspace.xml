@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00d7d9bd-760b-4862-a363-9963af071c1a" name="Changes" comment="Create stable main version">
-      <change beforePath="$PROJECT_DIR$/src/PennantOptimization/Optimizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PennantOptimization/Optimizer.java" afterDir="false" />
-    </list>
+    <list default="true" id="00d7d9bd-760b-4862-a363-9963af071c1a" name="Changes" comment="Create stable main version" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +15,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -49,7 +52,7 @@
       <updated>1665753941278</updated>
       <workItem from="1665753942615" duration="2078000" />
       <workItem from="1665839156363" duration="915000" />
-      <workItem from="1666452151637" duration="800000" />
+      <workItem from="1666452151637" duration="1128000" />
     </task>
     <task id="LOCAL-00001" summary="Use package">
       <created>1665839337353</created>
@@ -65,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666452681815</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create stable main version">
+      <created>1666452962056</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666452962056</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
