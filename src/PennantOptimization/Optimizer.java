@@ -65,25 +65,7 @@ public class Optimizer {
             generateBestChainsOfPennants(pennantPile.copy(), "AdaptiveWalk");
             for (PennantChain pennantChain : tempBestPennantChains) {
                 System.out.print("\n" + pennantChain.getInfos());
-            }/*
-            System.out.print("""
-                    \n###########
-                    Random Walk
-                    ###########
-                    """);
-            generateBestChainsOfPennants(pennantPile.copy(), "RandomWalk");
-            for (PennantOptimization.PennantChain pennantChain : tempBestPennantChains) {
-                System.out.print("\n" + pennantChain.getInfos());
-            }*/ /*
-            System.out.print("""
-                    \n######################
-                    Cross with Permutation
-                    ######################
-                    """);
-            generateBestChainsOfPennants(pennantPile.copy(), "CrossPermutation");
-            for (PennantOptimization.PennantChain pennantChain : tempBestPennantChains) {
-                System.out.print("\n" + pennantChain.getInfos());
-            }*/
+            }
         }
         System.out.print("\nThe program is terminated.\n");
     }
@@ -168,7 +150,6 @@ public class Optimizer {
         if (limitForPotentialImprovementIterations <= 0) {
             throw new IllegalArgumentException("Only positive limits for potential improvement iterations");
         }
-
         PennantChain pennantChain = generateRandomChain(pennantPile.copy());
         PennantChain newPennantChain;
         int count = 0;
