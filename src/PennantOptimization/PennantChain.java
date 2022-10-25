@@ -69,6 +69,7 @@ public class PennantChain implements Comparable<PennantChain>{
     }
     //FIXME -r-r-b-g-w- (8)    r-b-r-b-r-  (15)  find a meaningful way to measure the quality
     public int measureQualityIndex() {
+        // High distances are inverted into low numbers and vice versa, so that a low quality index indicates a good chain
         int sumInvertedDistances = 0;
         int invertPoint = chain.length-1;
         for (int i=0; i<amountOfPennantsOnChain; i++) {

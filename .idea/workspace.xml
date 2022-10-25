@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00d7d9bd-760b-4862-a363-9963af071c1a" name="Changes" comment="Create stable main version" />
+    <list default="true" id="00d7d9bd-760b-4862-a363-9963af071c1a" name="Changes" comment="Create dev branch">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PennantOptimization/Optimizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PennantOptimization/Optimizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PennantOptimization/PennantChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PennantOptimization/PennantChain.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="dev-annealing-measuringtry" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,7 +56,7 @@
       <updated>1665753941278</updated>
       <workItem from="1665753942615" duration="2078000" />
       <workItem from="1665839156363" duration="915000" />
-      <workItem from="1666452151637" duration="1128000" />
+      <workItem from="1666452151637" duration="5084000" />
     </task>
     <task id="LOCAL-00001" summary="Use package">
       <created>1665839337353</created>
@@ -75,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666452962056</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create dev branch">
+      <created>1666453511622</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666453511622</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +106,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Use package" />
     <MESSAGE value="Create stable main version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create stable main version" />
+    <MESSAGE value="Create dev branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create dev branch" />
   </component>
 </project>

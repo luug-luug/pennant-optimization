@@ -99,7 +99,7 @@ public class Optimizer {
             case "AdaptiveWalk" ->
                     adaptiveWalk(pennantPile, 100);
             case "Simulated Annealing" ->
-                    simulatedAnnealing(pennantPile, 100, 10, 0.01);
+                    simulatedAnnealing(pennantPile, 100, 100, 0.001);
             default -> throw new IllegalArgumentException("No mode selected");
         }
     }
@@ -186,6 +186,7 @@ public class Optimizer {
         }
 
         PennantChain pennantChain = generateRandomChain(pennantPile);
+        System.out.println(pennantChain);
         int count = 0;
         int i, j;
         double metropolis;
@@ -197,6 +198,9 @@ public class Optimizer {
             newPennantChain.swapPennants(i,j);
             // Compare chains
             metropolis = Math.exp(-(newPennantChain.measureQualityIndex()-pennantChain.measureQualityIndex())/temperature);
+            System.out.println(
+                    newPennantChain.measureQualityIndex() + " - " + pennantChain.measureQualityIndex() + " / " + temperature);
+            System.out.println("metr:" + metropolis);
             if (
                     newPennantChain.compareTo(pennantChain) > 0 ||
                             Math.random() <= metropolis
@@ -207,6 +211,9 @@ public class Optimizer {
                 count++;
             }
             temperature -= coolingStep;
+            if (temperature < 0) {
+                break;
+            }
         }
         tempBestPennantChains.add(pennantChain);
     }
